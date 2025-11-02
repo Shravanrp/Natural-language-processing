@@ -195,7 +195,7 @@ class TextPreprocessor:
             text: Input text
             keep_chars: Characters to keep (e.g., ' -' for spaces and hyphens)
         """
-        pattern = f'[^a-zA-Z0-9{re.escape(keep_chars)}\s]'
+        pattern = r'[^a-zA-Z0-9{re.escape(keep_chars)}\s]'
         return re.sub(pattern, '', text)
     
     def normalize_unicode(self, text: str) -> str:
