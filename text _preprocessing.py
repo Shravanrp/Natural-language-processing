@@ -113,8 +113,8 @@ class TextPreprocessor:
     def remove_punctuation_regex(self, text: str) -> str:
         """Alternative: Remove punctuation using regex (slower but more flexible)."""
         return re.sub(r'[^\w\s]', '', text)
-    
-    # ==================== 4. STEMMING ====================
+    # ====================  STEMMING or LEMMATIZATION ====================
+    # ====================  STEMMING ====================
     def stem(self, word: str) -> str:# for single word
         word = word.lower()
         
@@ -132,7 +132,7 @@ class TextPreprocessor:
         stemmed_words = [self.stem(word) for word in words]
         return ' '.join(stemmed_words)
     
-    # ==================== 5. LEMMATIZATION ====================
+    # ====================  LEMMATIZATION ====================
     def lemmatize(self, word: str, pos: str = 'n') -> str:# for single word
         word_lower = word.lower()
         
