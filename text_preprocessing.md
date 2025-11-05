@@ -55,13 +55,6 @@ advanced_text_preprocessor/
 
 ---
 
-## 📦 Installation
-
-```bash
-git clone https://github.com/Shravanrp/advanced-text-preprocessor.git
-cd advanced-text-preprocessor
-```
-
 ---
 
 ## 🧩 Usage
