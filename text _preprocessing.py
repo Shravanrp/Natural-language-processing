@@ -22,7 +22,6 @@ class AdvancedTextPreprocessor:
     12. Apply NER (optional)
     13. Correct spelling (optional)
     14. Replace synonyms (optional)
-    15. Vectorize / Encode text for model input
     """
     
     def __init__(self):
